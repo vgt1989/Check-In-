@@ -25,3 +25,14 @@ npm run build    # genera dist/ (estático, se puede alojar en GitHub Pages, Net
 ```
 
 Para el audio hace falta una voz neerlandesa en el sistema; lo ideal es **Nederlands (België)**.
+
+## Publicación en GitHub Pages
+
+La carpeta `docs/` (en la raíz del repositorio) contiene la app ya compilada. Para actualizarla tras un cambio:
+
+```bash
+cd vlaams-b2 && npm run build:pages
+```
+
+En GitHub: *Settings → Pages → Build and deployment → Deploy from a branch*, elige la rama y la carpeta `/docs`.
+La app queda en https://vgt1989.github.io/Check-In-/
